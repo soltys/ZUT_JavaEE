@@ -2,19 +2,31 @@
 \usepackage[MeX]{polski}
 \usepackage{parskip}
 \usepackage[utf8]{inputenc}
-\title{Projekt serwisu internetowego do oceniania zebranych linków}
+\title{Portal blogowy}
 \author{\textsc{Paweł Sołtysiak I1-41A} \\ \texttt{psoltysiak@wi.zut.edu.pl}}
 \begin{document}
 \maketitle
 \section{Wstęp}
-Serwis internetowy służący do oceniania zebranych linków przez użytkowników serwisu internetowego.
+Portal blogowy ma być platformą łącząca twórców blogów. Wspomagających ich komunikację oraz stanowić sposób na wypromowanie własnej twórczości wobec innych użytkowników portalu.
 
-Przede wszystkim serwis internetowy musi pozwalać na ocenę linków internetowych poprzez głosowanie w skali \texttt{+1} oraz \texttt{-1}. Każdy Link powinien posiadać opcję komentowania poprzez zalogowanego użytkownika.
 
-Powinna być możliwość sposobu sortowania linków według daty oraz według ilości zebranych głosów od użytkowników.
 
-Serwis powinien pozwalać na stworzenie nowych kont użytkowników oraz posiadać przynajmniej dwie grupy użytkowników, zwykłych oraz administratorów, którzy będą posiada większe uprawnienia w celu moderowania serwisem użytkowników.
+\section{Wymagania funkcjonalny}
+Portal musi posiadać możliwość zakładanie kont użytkowników. Użytkowników dzieli się następujące grupy.
+\begin{itemize}
+\item Normalni -- osoby posiadają możliwość tworzenia blogów, usuwania własnych blogów, posiadają prawo do wprowadzania modyfikacji w własnych blogach. Posiadają możliwość wstawiania komentarzy w blogu.
+\item Administratorzy -- mają pełne prawa w portalu, mogą tworzyć własne blogi mogę usuwać blogi innych osób, nie mogą edytować zawartości innych blogów.
+\end{itemize}
 
-Podczas wprowadzania linka do serwisu, link powinien zostać otagowany.
+Portalu musi posiadać funkcjonalność zakładania własnych blogów. Każdy blog jest przypisany do jednej konkretnej osoby. Właściciel bloga może z własnego bloga dodawać nowe treści, edytować lub je usuwać.
+
+Każdy z użytkowników przypisanych do grupy Normalnej posiada możliwość zostawiana komentarzy pod wpisami wprowadzonymi wewnątrz bloga.
+
+\section{Wymagania niefunkcjonalne}
+\section{Diagram przypadków użycia}
+%next-next exam
+\section{Diagram klas}
+\section{Diagram komponentów}
+
 \end{document}
 
