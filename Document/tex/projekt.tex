@@ -67,21 +67,23 @@ Dane potrzebne do stworzenia konta użytkownika przypisanego do grupy normalnej:
 
 Po wpisaniu danych do formularza tworzącego konto, musi zachodzić sprawdzenie poprawności danych wpisanych przez użytkownika. W tym przypadku Login nie może się powtarzać, hasło i hasło wpisane ponownie musi być jednakowe oraz wpisany adres Email musi być poprawnym adresem email.
 
-Przy powstaniu serwisu blogowego musi istnieć przynajmniej 1 konto użytkownika z uprawnieniami administratora. Następne konta z grupy Normalnej będą mogły dostać zwiększone uprawnienia przez jednego z administratorów.
+Przy powstaniu serwisu blogowego musi istnieć przynajmniej 1 konto użytkownika z uprawnieniami administratora. To będzie tak zwane konto \textbf{super administratora}. Taki administrator nie może stracić uprawnień, nawet on sam nie może odebrać sobie uprawnień. Następne konta z grupy Normalnej będą mogły dostać zwiększone uprawnienia przez jednego z administratorów.
 
 \subsection{Tworzenie blogów}
-Portalu musi posiadać funkcjonalność zakładania własnych blogów. Każdy blog jest przypisany do jednej konkretnej osoby. Właściciel bloga może z własnego bloga dodawać nowe treści do bloga, zwanymi także Wpisami, poprzez edytor typu WYSIWYG (ang. What You See Is What You Get). Oprócz treści wpisu użytkownik musi podać tytuł oraz określić kategorię wpisu.
+Portalu musi posiadać funkcjonalność zakładania własnych blogów. Każdy blog jest przypisany do jednej konkretnej osoby. Każdy użytkownik może mieć maksymalnie 1 blog. Właściciel bloga może z własnego bloga dodawać nowe treści do bloga, zwanymi także Wpisami, poprzez edytor typu WYSIWYG (ang. What You See Is What You Get). Oprócz treści wpisu użytkownik musi podać tytuł.
+
+Do każdego z utworzonych blogów musi istnieć 'przyjazny URL', który jest unikalny wobec wszystkich blogów zgromadzonych w systemie blogowym.
 
 Każdy z stworzonych wpisów powinien pozwalać na edycję zapisanego wpisu.
 
-Użytkownik powinien posiadać możliwość na usuwanie wcześniej stworzonych Wpisów. Do tego powinien służyć przycisk w ostrzegającym kolorze, po którym powinno się wyświetlać okno potwierdzające decyzję użytkownika.
+Użytkownik powinien posiadać możliwość na usuwanie wcześniej stworzonych Wpisów. Do tego powinien służyć przycisk w ostrzegającym kolorze.
 
 \subsection{Komentarze}
-Każdy z użytkowników przypisanych do grupy Normalnej posiada możliwość zostawiana komentarzy pod wpisami blogowymi.
+Każdy z użytkowników przypisanych do grupy Normalnej posiada możliwość zostawiana komentarzy pod wpisami blogowymi.  Obok każdego komentarza powinno wyświetlać się imię użytkownika wprowadzającego komentarz.
 
 Każdy wpis na każdym blogu powinien podlegać możliwości komentowania.
 
-Twórca komentarzu powinien mieć możliwość usunięcia wprowadzonego komentarza.
+Osoba posiadająca blog powinien mieć możliwość usunięcia wprowadzonego komentarza.
 
 \section{Wymagania niefunkcjonalne}
 \subsection{Część serwerowa}
@@ -99,7 +101,7 @@ Minimalne wymagania sprzętowe:
 Wymagania oprogramowania:
 \begin{itemize}
 \item System operacyjny -- Windows Server 2012 
-\item Serwer aplikacji -- IIS 7.0
+\item Serwer aplikacji -- IIS 8.0
 \item .NET Framework 4.5
 \item ASP.NET MVC 4.0
 \item MS SQL Server 2012
@@ -111,14 +113,13 @@ Wymagania oprogramowania:
 \begin{itemize}
 \item Procesor 2.5 Ghz lub szybszy
 \item Procesor musi wspierać architekturę 64-bitową
-\item 4 GB pamięci RAM
+\item 8 GB pamięci RAM
 \end{itemize}
 \subsubsection{Oprogramowanie}
 Wymagane oprogramowanie:
 \begin{itemize}
 \item Przeglądarka internetowa Firefox w wersji 25 lub nowszej
 \item System operacyjny Windows 8
-\item 4 GB pamięci RAM
 \item Procesor 2.5 Ghz lub szybszy
 \item Procesor musi wspierać architekturę 64-bitową
 \end{itemize}
